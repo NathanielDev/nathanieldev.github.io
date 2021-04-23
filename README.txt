@@ -1,0 +1,1 @@
+The example pic depicts the website as it is supposed to look, if it looks different, then there may have been a problem with the file connectivity.

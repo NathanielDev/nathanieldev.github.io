@@ -1,72 +1,183 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" href="style.css">
-	<title>Nathaniel Minghim N. 3046969</title>
-</head>
-<body>
-	<div id="page"> 
-<div class="side">
-	<h1>Table of contents:</h1>
-	<a href="index.html">Index:</a>
-	<ol style="text-align: left;">
-		<a href="#1"><li>What is the difference between the internet and the web? </li></a>
-		<a href="#2"><li>When was the Internet Created?</li>
-		<a href="#3"><li>How is a website delivered through The Internet? </li>
-		<a href="#4"><li>The technologies used in the Web.</li>
-		<a href="#5"><li>HTML</li>
-		<a href="#6"><li>CSS</li>
-		<a href="#7"><li>JS</li>
-	</ol>
-	<a href="about.html">About Me</a>
-	<a href="bibliography.html">Bibliography</a>
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+<title>JS Assignment - Nathaniel Minghim - No.3046969</title> 
+
+</head> 
+<body > 
+<div class="side" style="text-align: center;">
+	<h1>Welcome to my quiz!</h1>
+	<p>This quiz is on general Computer Science/Programming topics. </p> <br> <p>There are 5 questions on this quiz.</p> <br><p> The answer are NOT case sensitive.</p>
+	<br>
+	<p>The first question is the only one that you do not need to submit your answers with a button, just click on the images!</p>
+	<br>
+	<p>This test will challenge you on the basics, you will also need to know basic syntax on some of the main programming languages. </p> <br><p>Prove that you are a Jack of Trades!</p>
 </div>
-<div class="title">Web Report on How The Web Works.</div>
-<header id="1">What is the difference between the internet and the web? </header>
-<p>Before we learn about how the Web functions, <strong>it is important to establish the difference between “The Internet” and “The Web”. </strong>
+ <div id="overlay">
+ 	<div id="overlaytext">Congrats on finishing the test!</div>
+ 	<div id="overlaytextbottom"></div>
+ </div> 
+<p id="question">Question 1 - Which programming language is usually the most associated with Data Science?</p>
+<div id="answers1">
+<button type="button" onclick="setValue('c'),func(q2,q3,arrQ,i)">
+  <img src="images/c.png" alt="C" height="150px" width="150px"></button>
+  <button type="button" onclick="setValue('js'),func(q2,q3,arrQ,i)">
+  <img src="images/js.png" alt="JS" height="150px" width="150px" >
+  </button>
+  <button type="button" onclick="setValue('py'),func(q2,q3,arrQ,i)">
+  <img src="images/py.png" alt="py" height="150px" width="150px">
+   </button>
+   <button type="button" onclick="setValue('c++'),func(q2,q3,arrQ,i)">
+  <img src="images/c++.png" alt="c++" height="150px" width="150px">
+    </button>
+    <button type="button" onclick="setValue('java'),func(q2,q3,arrQ,i)">
+   <img src="images/java.png" alt="java" height="150px" width="150px">
+     </button>
+ </div>
+ <div id="answers2" style="display: none;"> 
 
-The internet is a global network in which a huge number of computers servers and devices are connected. This network eases the transfer of user input and data(communication) and can be accessed in a variety of ways. This data is exchanged between computers via network protocols. (1) <br><br>
+<input type="text" id="textAns2"> 
+<button type="button" id="buttonAns2" name="button2" onclick="setValue(document.getElementById('textAns2').value),func(q2,q3,arrQ,i)">Next Question! </button>
+ </div>
+ <div id="answers3" style="display: none;">
+ <input type="text" id="textAns3"> 
+<button type="button" id="buttonAns3" name="button3" onclick="setValue(document.getElementById('textAns3').value),func(q2,q3,arrQ,i)">Next Question! </button>
 
-<strong>The Web on the other hand is one of the parts of the internet.</strong> (2) The Web can be described as an aggregation of information which can be accessed by using the internet as a vehicle. This information is accessed via web browsers, and can be displayed in archives or web pages. The data in the web is broadcasted mainly through the HTTP protocol. </p>
+ </div>
+ <div id="answers4" style="display: none;">
+ <select name="dropdown4" id="dropdownAns4x">
+  <option value="high">HIGH</option>
+  <option value="low">LOW</option>
+  
+</select>
 
-<header id="2">When was the Internet Created?</header> 
-<p><strong>The US government was responsible for the first iteration of the internet in the 1960’s, but it wasn’t like the world wide web we use Today.</strong> It was just a network involving a few of their computers and was not available publicly. This early version of the internet could only exchange simple bits of information. In 1985 they developed a network backbone that was to be used mainly in universities. <strong>This era of the internet can be described as the pre-world wide web internet.</strong> </p>
-<p>
-It was only in <strong>1995</strong> that a commercial version of the internet started being available to the public, [1]in that year it started being distributed by internet service providers. <strong>This is where the world wide web era of the internet was born.</strong></p> 
-<p>However, the world wide web in the 90’s and early 2000’s was quite different from what it evolved into Today. With languages like JavaScript and PHP being in early development and not as prominent as they are Today, <strong>most pages were static.</strong> That also resulted in the Web 1.0 being composed of <strong>most read-only content,</strong> with little way of users being able to interact with the website (for example placing an order online) at all. The early web was also <strong>mainly composed of users rather than content creators.</strong> While Today everyone can create an account on Facebook and have their own personalized webpage they call a profile. Back then <strong>social media was not prominent,</strong> so only people who knew how to code (which was a small percentage of internet users) were able to create content at all for the internet. (3) </p>
-<p>Nowadays, most people have a profile on social media, websites can do complex back-end processes with the prominence that languages like JS and php have now, and most pages are tailored to each user that visits them, making them dynamic. </p>
-<header id="3">How is a website delivered through The Internet? </header>
-<p>After you type in the domain of the website you want to access in your web browser (URL), the following steps occur:</p> 
+ <select name="dropdown4" id="dropdownAns4y">
+  <option value="low">LOW</option>
+  <option value="high">HIGH</option>
+  
+</select>
 
-<p>Firstly, the web browser asks your device to send a request for the web page you are trying to access to your router, the router then forwards the request to your internet service provider(ISP). The request that your computer sends contains both the URL you are trying to access, as well as your own IP address, we will talk about why that is later on. The first step is now done. (4)</p> 
+<button type="button" id="buttonAns4" name="button4" onclick="setValue(processAns4()),func(q2,q3,arrQ,i)">Next Question! </button>
 
-<p>After the request for the webpage is received by your ISP, they translate the URL you typed in to access the website (for example: www.google.com) into an IP address (for example: 132.154.1.1), the IP address is used to tell your ISP what server the web page is located in. Now that the ISP has that information, it forwards your request to that server and the third step begins.</p> 
+ </div>
+ <p id="answers"></p>
+<div id="answers5" style="display: none;">
+	
+<input type="text" id="textAns5"> 
+<button type="button" id="buttonAns5" name="button5" onclick="setValue(document.getElementById('textAns5').value),func(q2,q3,arrQ,i),finish()">Finish! </button>
 
-<p>In the third step, the server hosting the website receives your request. Since the request contains your own IP address, the server knows where they need to send the response to. This response contains the code of the website, which is usually written in HTML, CSS and JavaScript, as well as any images or other media that may be displayed in the website.</p> 
-
-<p>The fourth step begins when you receive the response from the server the web page is on. Now that you web browser has access to the code of the webpage, it renders it line by line, then displays it into the screen of your device.</p> 
-
-<p>The process can be concisely shown in the diagram below: </p>
-
-<figure><img src="images/web-diagram.jpg">  <p class="source">image from: <a href="https://www.tutorialspoint.com/internet_technologies/web_pages.htm">Here.</a></p></figure>
-
-
-<header id="4">The technologies used in the Web: </header>
-<br>
-<div class="subheader" id="5">Hyper Text Mark-up Language (HTML): </div>
-
-<p>HTML is the widely used mark-up language when creating the visual part of a website. Even though a web developer writes HTML code to create a website, HTML is not a programming language. (5) </p>
-
-<p>We can think of HTML as the part that “holds” the content of a website, since it is inside the HTML document that the web developers insert all the text and media that is to be shown in the webpage. They then proceed to give each piece of text a class which they will later use to modify the looks of it using CSS. </p>
-<p>The main reason for HTML to not be considered a programming language is because of its lack of programming logic. It does not carry tasks determined by logic; it only process the text you give it into something that can be shown on a web browser. Nonetheless HTML is still extremely useful when creating a website.</p>
-<div class="subheader" id="6">Cascading Style Sheets (CSS):</div>
-<p>CSS just like HTML is a mark-up language that also handles the visual part of a website. (6) While HTML displays the text of the page, CSS as the name suggests is used to stylize and more efficiently arrange the elements of the page.</p>
-<p>After the web developer writes and assigns classes to the content of the page in the HTML document, they create a CSS document to stylize it. There they can do things like changing the color, font, size, and alignment of the content. They can also create boxes to organize the content, and dictate what content goes where, and much more. We can say that CSS determines how the content of a webpage is shown.</p>
-<div class="subheader" id="7">JavaScript (JS): </div>
-<p>Unlike CSS and HTML, JS is indeed a programming language, and is generally the one used to determine the logic of the website.</p>
-<p>Since JS is a programming and not a mark-up language, it uses programming logic to create the functions that a website may perform. HTML is where the content of a website is stored, CSS determines how that content is shown, whereby JS commands more of the “inner workings” of the website. </p>
-<p>If there is any interaction on the website by the user, that input is then proccessed by JS and then the website performs a certain function that was made using JS to generate the output.</p>
 </div>
-<footer>Web report by: Nathaniel Minghim N. 3046969 email: <a href="mailto:nminghim@gmail.com">nminghim@gmail.com</a></footer>
-</body>
-</html>
+<footer> Quiz by: Nathaniel Minghim,3045959,nathaniel.minghim@student.griffith.ie.</footer>
+</body> 
+<script>
+var q2 = "Question 2 - What is the keyword used in JavaScript to declare a global variable inside a function?"
+var q3 = "Question 3 - What is the logical NOT operator in C?"
+var q4 = "Question 4 - Represent the inputs that would result in HIGH if passed through an AND gate."
+var q5 = "Question 5 - What is the Java keyword to make an object's attribute only accessable inside its own declared class?"
+var arrQ = [q2,q3,q4,q5,"Finished"] //array with all the questions, will go to the next question each time the user submit their answer.
+var flag = true //used on the setValue function
+var i = 0 //counter variable
+var correctAns = 0; // keeps track of the user's correct answers.
+
+function processAns4(){ // converts question 4's answers (two inputs) into one input to fit into the checkAns() function
+var l = document.getElementById("dropdownAns4x");
+var ans = l.options[l.selectedIndex].value;
+
+
+var z = document.getElementById("dropdownAns4y");
+var ans2 = z.options[z.selectedIndex].value;
+
+	if (ans === "high" && ans2 === "high" ) {
+		return true
+	}else {
+		return false
+	}
+}
+
+function checkAns(answer){ //checks if the user got the question right, if they did, increase correctAns by 1, also logs the number of correct answers for debugging.
+answer = String(answer)
+answer = answer.toLowerCase()
+
+switch (window.i){
+	case 0: if (answer == "py") {window.correctAns++
+		console.log(window.correctAns)
+	}
+	break
+	case 1: if (answer == "window")  {window.correctAns++
+		console.log(window.correctAns)
+	}
+	break
+	case 2: if (answer == "!")  {window.correctAns++
+		console.log(window.correctAns)
+	}
+	break
+	case 3:
+	console.log(answer)
+	 if (answer == "true")  {window.correctAns++ //to bool?
+		console.log(window.correctAns)
+	}
+	break
+	case 4: if (answer == "private")  {window.correctAns++
+		console.log(window.correctAns)
+	}
+	break
+
+}
+
+}
+function func(q2,q3,arrQ){ //main function of the code, dictates which elements from the page will be removed/added to accomodate all the questions and answer form into one page.
+i = window.i
+
+document.getElementById("question").innerHTML = arrQ[i]
+i = i + 1
+if (i == 1) {
+	document.getElementById("answers2").style.display = "block";
+ 
+}
+if (i == 2) {
+	document.getElementById("textAns2").remove()
+	document.getElementById("buttonAns2").remove()
+	document.getElementById("answers3").style.display = "block";
+}if (i == 3) {
+	document.getElementById("textAns3").remove()
+	document.getElementById("buttonAns3").remove()
+	document.getElementById("answers4").style.display = "block";
+
+}if (i == 4) {
+	document.getElementById("dropdownAns4x").remove()
+	document.getElementById("dropdownAns4y").remove()
+	document.getElementById("buttonAns4").remove()
+	document.getElementById("answers5").style.display = "block";
+
+}
+}
+
+
+
+function setValue(str){ //sets the value that was retrieved from the input form and sends it to the checkAns() function
+	 checkAns(str)
+	 if (window.flag) {
+	 document.getElementById("answers1").remove()
+	 window.flag=false
+}
+}
+function finish(){ //executed when the user finishes the quiz, displays the overlay and writes the number of correct answers, if the user scored below 3, the text is in red :).
+	correctAns = window.correctAns
+	ansPercentage = correctAns * 20
+	if (correctAns <=3) {
+		document.getElementById("overlaytextbottom").style.color = "red"
+
+	}
+	document.getElementById("overlaytextbottom").innerHTML = "Your Score was " + correctAns + "/5, or "+ ansPercentage + "%"
+
+	document.getElementById("overlay").style.display = "block";
+
+}
+
+// unfortunatelly my code ended up becoming way more complicated than it needed to be, i'll try to improve upon that on the next time.
+</script> 
+
+
+
+</html> 

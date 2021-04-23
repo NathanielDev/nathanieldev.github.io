@@ -3,12 +3,17 @@
 	height: 100%;
 	background-color: #A54BCB;
 	position: fixed;
-	padding-top: 200px;
+	padding-top: 100px;
 	left: 0;
 	top: 0;
 	text-align: center;
+	z-index: 2;
 }
-
+.side p {
+	color: snow;
+	margin-right: 50px;
+	font-size: 1.1rem;
+}
 .side a {
 	text-decoration: none;
 	color: snow;
@@ -21,19 +26,21 @@
 	text-decoration: none;
 	color: snow;
 	font-size: 30px;
-	margin-top: 20px;
+	margin-bottom: 40px;
 	display: block;
 }
 .side a:hover{
 	color: #000000;
 }
 body {
-	margin-left: 20%;
-	font-family:Muli,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+	
+	text-align: center;
+	
+	font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 }
 header {
 	font-weight: bold;
-	font-size: 20px; 
+	font-size: 1.4rem; 
 	margin-left: 30px;
 }
 
@@ -46,6 +53,7 @@ header {
 body p {
 	margin-left: 45px;
 	margin-top: 20px;
+	font-size: 1.2rem;
 }
 
 strong {
@@ -76,13 +84,52 @@ li {
 }
 
 footer {
-	padding-top: 20px;
+	position: absolute;
 	text-align: center;
 	color: snow;
 	border: solid;
-	border-color: snow;
+	
 	background-color: #332f2f;
+	padding-top: 18px;
 	padding-bottom: 18px;
-
+	bottom: 0;
+	width: 100%;
 }
 
+.description {
+	color: grey;
+}
+
+#overlay { /* source of inspiration: https://www.w3schools.com/howto/howto_css_overlay.asp */
+  z-index: 3; 
+  background-color: rgba(0,0,0,0.5);
+  position: fixed; 
+  display: none; 
+  width: 100%; 
+  height: 100%; 
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer; 
+}
+
+#overlaytext{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#overlaytextbottom{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: green;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
